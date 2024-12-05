@@ -2,9 +2,7 @@
 - hosts: all
   become: yes
   tasks: 
-  - name: in this task i want to install tree
+  - name: in this task i want to install webserver
     apt: 
-      name: tree
-  - name: in this task i want to instal git
-    apt:
-      name: git
+      name: apache2
+  
