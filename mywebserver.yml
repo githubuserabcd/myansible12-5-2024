@@ -5,7 +5,6 @@
   - name: in this task i want to install tree
     apt: 
       name: tree
-  - neme: in this task i want to instal git
+  - name: in this task i want to instal git
     apt:
       name: git
-      
