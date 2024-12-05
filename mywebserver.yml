@@ -10,3 +10,11 @@
     service:
       name: apache2
       state: started
+  - name: in this task i want to install tree
+    apt: 
+      name: tree
+      state: present 
+  - name: in this task i want to install git
+    apt: 
+      name: git
+      state: present
