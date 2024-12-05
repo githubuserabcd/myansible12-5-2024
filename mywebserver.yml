@@ -7,15 +7,19 @@
     apt: 
       name: apache2
       state: present 
+    when: ansible_os_family== "Debian"
   - name: in this task i want to start webserver
     service:
       name: apache2
       state: started
+    when: ansible_os_family== "Debian"
   - name: in this task i want to install tree
     apt: 
       name: tree
       state: present 
+    when: ansible_os_family== "Debian"
   - name: in this task i want to install git
     apt: 
       name: git
       state: present
+    when: ansible_os_family== "Debian"
